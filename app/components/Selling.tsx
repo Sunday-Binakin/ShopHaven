@@ -1,22 +1,23 @@
 import React from 'react';
 import Image from 'next/image';
-import shirt from '../../public/images/brazil.jpg';
-import Arrival1 from '../../public/images/arrival1.jpg';
-import Arrival2 from '../../public/images/arrivals2.jpg';
-import Arrival3 from '../../public/images/arrival3.jpg';
+// import shirt from '../../public/images/brazil.jpg';
+import Selling1 from '../../public/images/selling1.jpg';
+import Selling2 from '../../public/images/selling2.jpg';
+import Selling3 from '../../public/images/selling3.jpg';
+import Selling4 from '../../public/images/selling4.jpg';
 import { Star } from 'lucide-react';
 
-const Arrivals = () => {
+const Selling = () => {
     const newArrivals = [
-        { image: Arrival1, name: "T-Shirt with Tape Details", rating: 4.5, price: 120 }, 
-        { image: Arrival2, name: "T-Shirt with Tape Details", rating: 5.0, price: 240 },
-        { image: Arrival3, name: "T-Shirt with Tape Details", rating: 4.0, price: 180 },
-        { image: shirt, name: "T-Shirt with Tape Details", rating: 5.0, price: 130 },
+        { image: Selling1, name: "T-Shirt with Tape Details", rating: 4.5, price: 212 }, 
+        { image: Selling3, name: "T-Shirt with Tape Details", rating: 5.0, price: 145 },
+        { image: Selling2, name: "T-Shirt with Tape Details", rating: 4.0, price: 80 },
+        { image: Selling4, name: "T-Shirt with Tape Details", rating: 5.0, price: 210 },
     ];
 
     return (
-        <div className='m-20'>
-            <h1 className='flex justify-center mt-4 text-4xl font-bold'>NEW ARRIVALS</h1>
+        <div className='m-10'>
+            <h1 className='flex justify-center mt-4 text-4xl font-bold'>Top Selling</h1>
             <div className='flex flex-wrap justify-center items-center gap-10 p-8'>
                 {newArrivals.map((item, index) => (
                     <div key={index} className='bg-gray-50'>
@@ -56,4 +57,4 @@ const Arrivals = () => {
     );
 };
 
-export default Arrivals;
+export default Selling;
